@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPL2FMS", "FPL2FMS\FPL2FMS.csproj", "{211DA135-2AEE-4EC9-915E-B9008D1F5CB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{211DA135-2AEE-4EC9-915E-B9008D1F5CB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{211DA135-2AEE-4EC9-915E-B9008D1F5CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{211DA135-2AEE-4EC9-915E-B9008D1F5CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{211DA135-2AEE-4EC9-915E-B9008D1F5CB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE61AF39-0B8E-4CF4-8BD2-39AF29182123}
+	EndGlobalSection
+EndGlobal
