@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button_load = new System.Windows.Forms.Button();
-            this.textBox_load = new System.Windows.Forms.TextBox();
             this.textBox_fpl = new System.Windows.Forms.TextBox();
+            this.textBox_load = new System.Windows.Forms.TextBox();
+            this.button_load = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox_fms = new System.Windows.Forms.TextBox();
             this.textBox_save = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -55,6 +55,35 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "FPL";
             // 
+            // textBox_fpl
+            // 
+            this.textBox_fpl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox_fpl.Location = new System.Drawing.Point(3, 16);
+            this.textBox_fpl.Multiline = true;
+            this.textBox_fpl.Name = "textBox_fpl";
+            this.textBox_fpl.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox_fpl.Size = new System.Drawing.Size(639, 189);
+            this.textBox_fpl.TabIndex = 2;
+            this.textBox_fpl.Text = "FPL to FMS Converter\r\nJuly 6,2019\r\nGeorge Reimer\r\nPublic Release\r\n\r\nConvert SkyVe" +
+    "ctor FPL files to XPlane 11 FMS files.";
+            // 
+            // textBox_load
+            // 
+            this.textBox_load.Location = new System.Drawing.Point(94, 213);
+            this.textBox_load.Name = "textBox_load";
+            this.textBox_load.Size = new System.Drawing.Size(519, 20);
+            this.textBox_load.TabIndex = 1;
+            // 
+            // button_load
+            // 
+            this.button_load.Location = new System.Drawing.Point(12, 211);
+            this.button_load.Name = "button_load";
+            this.button_load.Size = new System.Drawing.Size(75, 23);
+            this.button_load.TabIndex = 0;
+            this.button_load.Text = "Load";
+            this.button_load.UseVisualStyleBackColor = true;
+            this.button_load.Click += new System.EventHandler(this.button_load_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.textBox_fms);
@@ -67,35 +96,6 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "FMS";
-            // 
-            // button_load
-            // 
-            this.button_load.Location = new System.Drawing.Point(12, 211);
-            this.button_load.Name = "button_load";
-            this.button_load.Size = new System.Drawing.Size(75, 23);
-            this.button_load.TabIndex = 0;
-            this.button_load.Text = "Load";
-            this.button_load.UseVisualStyleBackColor = true;
-            this.button_load.Click += new System.EventHandler(this.button_load_Click);
-            // 
-            // textBox_load
-            // 
-            this.textBox_load.Location = new System.Drawing.Point(94, 213);
-            this.textBox_load.Name = "textBox_load";
-            this.textBox_load.Size = new System.Drawing.Size(519, 20);
-            this.textBox_load.TabIndex = 1;
-            // 
-            // textBox_fpl
-            // 
-            this.textBox_fpl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox_fpl.Location = new System.Drawing.Point(3, 16);
-            this.textBox_fpl.Multiline = true;
-            this.textBox_fpl.Name = "textBox_fpl";
-            this.textBox_fpl.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox_fpl.Size = new System.Drawing.Size(639, 189);
-            this.textBox_fpl.TabIndex = 2;
-            this.textBox_fpl.Text = "FPL to FMS Converter\r\nJuly 3,2019\r\nGeorge Reimer\r\nPublic Release\r\n\r\nConvert SkyVe" +
-    "ctor FPL files to XPlane 11 FMS files.";
             // 
             // textBox_fms
             // 
@@ -147,7 +147,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "FPL to FMS Converter";
+            this.Text = "FPL to FMS Converter V1.1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
